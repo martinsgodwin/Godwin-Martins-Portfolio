@@ -6,6 +6,7 @@ function Contact() {
   const [hoveredStar, setHoveredStar] = useState(0);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,18 +19,40 @@ function Contact() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    // Simulate form submission
-    setTimeout(() => {
+    setError(null);
+
+    try {
+      const response = await fetch('https://formspree.io/f/mdajorkv', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formData,
+          rating,
+        }),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        const data = await response.json();
+        setError(data?.errors?.[0]?.message || 'Something went wrong. Please try again.');
+      }
+    } catch (err) {
+      setError('Network error. Please check your connection and try again.');
+    } finally {
       setLoading(false);
-      setSubmitted(true);
-    }, 1500);
+    }
   };
 
   const handleReset = () => {
     setSubmitted(false);
+    setError(null);
     setRating(0);
     setFormData({ name: '', email: '', subject: '', type: '', message: '' });
   };
@@ -68,7 +91,7 @@ function Contact() {
                 </div>
                 <div className="detail-info">
                   <span className="detail-label">Email</span>
-                  <span className="detail-value">your.email@example.com</span>
+                  <span className="detail-value">martinsgodwin442@gmail.com</span>
                 </div>
               </a>
 
@@ -80,7 +103,7 @@ function Contact() {
                 </div>
                 <div className="detail-info">
                   <span className="detail-label">Phone</span>
-                  <span className="detail-value">+234 000 000 0000</span>
+                  <span className="detail-value">+234 907 160 2631</span>
                 </div>
               </a>
 
@@ -104,7 +127,7 @@ function Contact() {
                 </div>
                 <div className="detail-info">
                   <span className="detail-label">LinkedIn</span>
-                  <span className="detail-value">linkedin.com/in/godwinmartins</span>
+                  <span className="detail-value">www.linkedin.com/in/godwin-martins-67597a396</span>
                 </div>
               </a>
 
@@ -228,6 +251,15 @@ function Contact() {
                       />
                     </div>
 
+                    {error && (
+                      <div className="error-message">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                        </svg>
+                        {error}
+                      </div>
+                    )}
+
                     <button type="submit" className="submit-btn" disabled={loading}>
                       {loading ? (
                         <>
@@ -258,6 +290,18 @@ function Contact() {
         @keyframes spin {
           from { transform: rotate(0deg); }
           to { transform: rotate(360deg); }
+        }
+        .error-message {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          color: #e53e3e;
+          background: #fff5f5;
+          border: 1px solid #fed7d7;
+          border-radius: 8px;
+          padding: 10px 14px;
+          font-size: 0.875rem;
+          margin-bottom: 12px;
         }
       `}</style>
     </section>
