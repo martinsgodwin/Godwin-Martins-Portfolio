@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaHeart } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaWhatsapp, FaHeart } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import '../styles/Footer.css';
 
@@ -13,7 +13,7 @@ function Footer() {
         <div className="footer-content">
           <div className="footer-section">
             <h3>Godwin Martins</h3>
-            <p>Full Stack Developer | Creative Problem Solver</p>
+            <p>A passionate Frontend Developer dedicated to building elegant, responsive, and user-focused web applications using React, Next.JS and modern web tools.</p>
           </div>
 
           <div className="footer-section">
@@ -35,8 +35,8 @@ function Footer() {
               <a href="https://www.linkedin.com/in/godwin-martins-67597a396" target="_blank" rel="noopener noreferrer" className="footer-icon">
                 <FaLinkedin />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="footer-icon">
-                <FaTwitter />
+              <a href="https://wa.me/2349071602631" target="_blank" rel="noopener noreferrer" className="footer-icon">
+                <FaWhatsapp />
               </a>
               <a href="mailto:martinsgodwin442@gmail.com" className="footer-icon" target="_blank" rel="noopener noreferrer">
                 <MdEmail />

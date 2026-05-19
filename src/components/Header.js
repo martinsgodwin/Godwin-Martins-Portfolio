@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaBars, FaTimes } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaWhatsapp, FaBars, FaTimes } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import '../styles/Header.css';
 
@@ -41,8 +41,8 @@ function Header() {
           <a href="https://www.linkedin.com/in/godwin-martins-67597a396" target="_blank" rel="noopener noreferrer" className="icon-link">
             <FaLinkedin />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" className="icon-link">
-            <FaTwitter />
+          <a href="https://wa.me/2349071602631" target="_blank" rel="noopener noreferrer" className="icon-link">
+            <FaWhatsapp />
           </a>
           <a href="mailto:martinsgodwin442@gmail.com" className="icon-link" target="_blank" rel="noopener noreferrer">
             <MdEmail />
@@ -78,8 +78,8 @@ function Header() {
           <a href="https://www.linkedin.com/in/godwin-martins-67597a396" target="_blank" rel="noopener noreferrer" className="sidebar-icon">
             <FaLinkedin />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" className="sidebar-icon">
-            <FaTwitter />
+          <a href="https://wa.me/2349071602631" target="_blank" rel="noopener noreferrer" className="sidebar-icon">
+            <FaWhatsapp />
           </a>
           <a href="mailto:martinsgodwin442@gmail.com" className="sidebar-icon" target="_blank" rel="noopener noreferrer">
             <MdEmail />

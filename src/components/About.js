@@ -4,26 +4,26 @@ function About() {
   const experiences = [
     {
       id: 1,
-      title: 'Frontend Developer',
-      company: 'Tech Company',
-      period: '2023 - Present',
+      title: 'Junior Developer',
+      company: 'Temlio Communications',
+      period: '2025 - Present',
       description: 'Building responsive web applications with React and modern web technologies.'
     },
     {
       id: 2,
-      title: 'Junior Developer',
-      company: 'Startup Inc',
-      period: '2022 - 2023',
-      description: 'Developed and maintained web applications with focus on user experience.'
+      title: 'Frontend Developer',
+      company: 'Freelance',
+      period: '2025 - Present',
+      description: 'Developed multiple projects for clients, including portfolio websites, e-commerce platforms, and interactive web applications.'
     }
   ];
 
   const testimonials = [
     {
       id: 1,
-      text: 'Godwin is an exceptional developer with great attention to detail and problem-solving skills.',
-      author: 'John Doe',
-      role: 'Project Manager',
+      text: 'A proactive, detail-oriented developer who communicates clearly, delivers high-quality work on time, and enhances overall project workflows.',
+      author: 'Mr Paul Ajayi',
+      role: 'Project Designer',
       image: '/avatar1.jpg'
     },
     {

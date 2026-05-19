@@ -53,8 +53,8 @@
 }
 
 .logo:hover .logo-text {
-  background-color: var(--bright-blue);
-  color: var(--dark-navy);
+  /* background-color: var(--bright-blue);
+  color: var(--dark-navy); */
 }
 
 /* Desktop Navigation */

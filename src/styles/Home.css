@@ -1,0 +1,33 @@
+/* Home/Hero Section Styles */
+.scroll-indicator {
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.scroll-indicator svg {
+  color: var(--primary-color);
+  stroke-width: 3;
+}
+
+.scroll-indicator p {
+  font-size: 0.85rem;
+  color: var(--gray-text);
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive Scroll Indicator */
+@media (max-width: 768px) {
+  .scroll-indicator {
+    display: none;
+  }
+}
