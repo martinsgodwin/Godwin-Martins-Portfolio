@@ -83,7 +83,7 @@ function Contact() {
             </div>
 
             <div className="contact-details">
-              <a href="mailto:your.email@example.com" className="contact-detail-item">
+              <a href="mailto:martinsgodwin442@gmail.com" className="contact-detail-item">
                 <div className="detail-icon">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
@@ -95,7 +95,7 @@ function Contact() {
                 </div>
               </a>
 
-              <a href="tel:+2340000000000" className="contact-detail-item">
+              <a href="tel:+2349071602631" className="contact-detail-item">
                 <div className="detail-icon">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
@@ -119,7 +119,7 @@ function Contact() {
                 </div>
               </div>
 
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="contact-detail-item">
+              <a href="https://www.linkedin.com/in/godwin-martins-67597a396" target="_blank" rel="noopener noreferrer" className="contact-detail-item">
                 <div className="detail-icon">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.39v-1.2h-2.5v8.5h2.5v-4.34c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.34h2.5M6.5 8a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m-1 13.5h2.5V9h-2.5v12.5z"/>
@@ -127,7 +127,7 @@ function Contact() {
                 </div>
                 <div className="detail-info">
                   <span className="detail-label">LinkedIn</span>
-                  <span className="detail-value">www.linkedin.com/in/godwin-martins-67597a396</span>
+                  <span className="detail-value">Godwin Martins</span>
                 </div>
               </a>
 
@@ -139,7 +139,7 @@ function Contact() {
                 </div>
                 <div className="detail-info">
                   <span className="detail-label">GitHub</span>
-                  <span className="detail-value">github.com/Godwin-Martins</span>
+                  <span className="detail-value">Godwin Martins</span>
                 </div>
               </a>
             </div>

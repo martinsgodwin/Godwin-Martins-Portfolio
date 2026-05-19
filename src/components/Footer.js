@@ -29,16 +29,16 @@ function Footer() {
           <div className="footer-section">
             <h4>Connect</h4>
             <div className="footer-social">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="footer-icon">
+              <a href="https://github.com/Godwin-Martins" target="_blank" rel="noopener noreferrer" className="footer-icon">
                 <FaGithub />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="footer-icon">
+              <a href="https://www.linkedin.com/in/godwin-martins-67597a396" target="_blank" rel="noopener noreferrer" className="footer-icon">
                 <FaLinkedin />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="footer-icon">
+              <a href="#" target="_blank" rel="noopener noreferrer" className="footer-icon">
                 <FaTwitter />
               </a>
-              <a href="mailto:your.email@example.com" className="footer-icon">
+              <a href="mailto:martinsgodwin442@gmail.com" className="footer-icon" target="_blank" rel="noopener noreferrer">
                 <MdEmail />
               </a>
             </div>

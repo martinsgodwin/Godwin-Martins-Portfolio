@@ -35,16 +35,16 @@ function Header() {
 
         {/* Social Icons */}
         <div className="social-icons">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="icon-link">
+          <a href="https://github.com/Godwin-Martins" target="_blank" rel="noopener noreferrer" className="icon-link">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="icon-link">
+          <a href="https://www.linkedin.com/in/godwin-martins-67597a396" target="_blank" rel="noopener noreferrer" className="icon-link">
             <FaLinkedin />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="icon-link">
+          <a href="#" target="_blank" rel="noopener noreferrer" className="icon-link">
             <FaTwitter />
           </a>
-          <a href="mailto:your.email@example.com" className="icon-link">
+          <a href="mailto:martinsgodwin442@gmail.com" className="icon-link" target="_blank" rel="noopener noreferrer">
             <MdEmail />
           </a>
         </div>
@@ -72,16 +72,16 @@ function Header() {
           <li><a href="#contact" onClick={closeSidebar}>Contact</a></li>
         </ul>
         <div className="sidebar-social">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="sidebar-icon">
+          <a href="https://github.com/Godwin-Martins" target="_blank" rel="noopener noreferrer" className="sidebar-icon">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="sidebar-icon">
+          <a href="https://www.linkedin.com/in/godwin-martins-67597a396" target="_blank" rel="noopener noreferrer" className="sidebar-icon">
             <FaLinkedin />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="sidebar-icon">
+          <a href="#" target="_blank" rel="noopener noreferrer" className="sidebar-icon">
             <FaTwitter />
           </a>
-          <a href="mailto:your.email@example.com" className="sidebar-icon">
+          <a href="mailto:martinsgodwin442@gmail.com" className="sidebar-icon" target="_blank" rel="noopener noreferrer">
             <MdEmail />
           </a>
         </div>
